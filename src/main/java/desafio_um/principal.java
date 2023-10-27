@@ -1,6 +1,5 @@
-package teste_nivel_um;
+package desafio_um;
 
-import javax.print.DocFlavor;
 import java.util.Locale;
 import java.util.Scanner;
 
