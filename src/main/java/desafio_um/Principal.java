@@ -3,7 +3,7 @@ package desafio_um;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class principal {
+public class Principal {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner read = new Scanner(System.in);
