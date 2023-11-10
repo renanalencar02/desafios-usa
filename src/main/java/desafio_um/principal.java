@@ -15,6 +15,7 @@ public class principal {
         System.out.print("Digite o caractere a ser buscado: ");
         Character buscar = read.nextLine().charAt(0);
 
+
         Integer total = ContarCaracteres(buscar.toString().toLowerCase(), caracteres.toLowerCase());
         System.out.println("Total de caracteres buscados: "+ total);
 
