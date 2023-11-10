@@ -2,7 +2,7 @@ package desafio_dois;
 
 import java.util.*;
 
-public class Principal {
+public class TransformacaoDeCaracteres {
 
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
@@ -15,6 +15,10 @@ public class Principal {
     }
 
     public static String primeiraLetraMaiuscula(String nomeCompleto){
+        if(nomeCompleto == null || nomeCompleto.isEmpty()){
+            throw new RuntimeException("Entrada inválida!");
+        }
+
         nomeCompleto = nomeCompleto.toLowerCase();
         List<String> preposicoes = Arrays.asList("de", "do", "da", "dos", "das");
 

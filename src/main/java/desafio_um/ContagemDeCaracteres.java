@@ -3,7 +3,7 @@ package desafio_um;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Principal {
+public class ContagemDeCaracteres {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner read = new Scanner(System.in);
@@ -22,6 +22,9 @@ public class Principal {
 
     }
     public static Integer ContarCaracteres(String buscado, String conjuntoCaracteres){
+        if(buscado == null || conjuntoCaracteres == null || buscado.isEmpty() || conjuntoCaracteres.isEmpty()){
+            throw new RuntimeException("Entrada inválida!");
+        }
         int cont = 0;
         for (int i = 0; i < conjuntoCaracteres.length(); i++) {
             if (conjuntoCaracteres.charAt(i) == buscado.charAt(0)){
