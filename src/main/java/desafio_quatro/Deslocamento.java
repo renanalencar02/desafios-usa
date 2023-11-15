@@ -17,7 +17,7 @@ public class Deslocamento {
         if(deslocamento == null || entrada == null || entrada.isEmpty()){
             throw new RuntimeException("Entrada inválida. Valor nulo ou vazio.");
         }
-        Matcher matcher = Pattern.compile("^[a-zA-Z]+$").matcher(entrada);
+        Matcher matcher = Pattern.compile("^[a-zA-Z ]+$").matcher(entrada);
         if(!matcher.matches()){
             throw new RuntimeException("Entrada inválida. Caracteres especiais.");
         }
@@ -56,6 +56,15 @@ public class Deslocamento {
         try{
             String testeTres = realizarDeslocamento(1, "z");
             if(!testeTres.equals("0")){
+                System.out.println("Resultado do teste: Reprovado!");
+            }
+            System.out.println("Resultado do teste: Aprovado!");
+        }catch (RuntimeException e){
+            System.out.println(e.getMessage());
+        }
+        try{
+            String testeTres = realizarDeslocamento(2, "Renan Raul");
+            if(!testeTres.equals("Tgpcp Tcwn")){
                 System.out.println("Resultado do teste: Reprovado!");
             }
             System.out.println("Resultado do teste: Aprovado!");
