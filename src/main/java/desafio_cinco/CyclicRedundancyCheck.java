@@ -65,7 +65,7 @@ public class CyclicRedundancyCheck {
             System.out.println("Resultado do teste Cinco: " + e.getMessage());
         }
         try {
-            String testeSeis = criarCrc("");
+            String testeSeis = criarCrc(null);
             System.out.println("Deveria lançar uma exception");
         }catch (RuntimeException e){
             System.out.println("Resultado do teste Seis: " +e.getMessage());
