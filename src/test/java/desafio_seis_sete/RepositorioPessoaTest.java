@@ -9,7 +9,7 @@ import java.util.List;
 class RepositorioPessoaTest {
 
     @Test
-    @DisplayName("Deve retornar um objeto pessoa cadastrado.")
+    @DisplayName("Deverá cadastrar uma nova pessoa e listar.")
     void cadastrar_DeveRetornarUmObjetoPessoaCadastrado() {
         Pessoa pessoa = new Pessoa("José", "jose@gmail.com", 50);
         RepositorioPessoa repositorio = new RepositorioPessoa();
