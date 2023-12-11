@@ -1,7 +1,6 @@
-package desafio_seis;
+package desafio_seis_sete;
 
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Menu {

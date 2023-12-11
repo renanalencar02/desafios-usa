@@ -1,6 +1,5 @@
-package desafio_seis;
+package desafio_seis_sete;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ServicoDeCadastro {

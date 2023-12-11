@@ -1,4 +1,4 @@
-package desafio_seis;
+package desafio_seis_sete;
 
 public class Pessoa {
     private String nome;
